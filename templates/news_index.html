@@ -1,0 +1,16 @@
+$def with (all_news)
+
+
+<meta charset="UTF-8">
+<h1>深度边缘</h1>
+<div class=auto__edge_news>
+    <h2>最新报道</h2>
+    <ul>
+        $for news in all_news:
+        <li>
+            <h3><font color="#05006C">$news.title</font></h3>
+
+        </li>
+    </ul>
+
+</div>

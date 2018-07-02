@@ -1,0 +1,68 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/login.css" />
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="../static/js/email.js"></script>
+	</head>
+
+	<body style="background-color: #000000;">
+
+		<a id="Login_start_" class="btn btn-danger" style="width:100px;height:40px;border-radius: 0;">用户须知</a>
+		<a id="Regist_start_" class="btn btn-success" style="width:100px;height:40px;border-radius: 0;">邮件发送</a>
+
+
+		<!--<div id='Login_start' style="position: absolute;" >-->
+		<div id='_start'>
+			<div id='_close' style="display: none;">
+				<span class="glyphicon glyphicon-remove"></span>
+			</div>
+			<br /> 
+			<!--用户须知-->
+			<div id="login_container">
+				<div id="lab1">
+					<span id="lab_login">您需了解</span>
+				</div>
+
+				<div id="form_container1">
+
+					<h3><font color="black">【奥谭】提供两种邮件服务：</font></h3>
+					<br />
+					<h4 class="text-left"><font color="black">匿名邮件：</font></h4>
+					<p class="text-left"><font color="black">使用奥谭的公共邮箱作为发信方（所有的用户均有使用权限，但是没有查看、修改权限）。
+						向收件邮箱发送信息，可以达到匿名目的。</font></p>
+
+					<h4 class="text-left"><font color="black">应急邮件：</font></h4>
+					<p class="text-left"><font color="black">如果你需要的话我们建议你在邮件中表明自己的身份，这样对方才能辨识你的邮件。</font></p>
+				</div>
+
+			</div>
+			<!-- 邮件发送 -->
+			<div id='regist_container' style="display: none;">
+				<div id="lab1">
+					<span id="lab_login">会员注册</span>
+				</div>
+				<div id="form_container2" style="padding-top: 25px;">
+					
+					<input type="text" class="form-control" value="admin"  placeholder="用户名" id="regist_account"/>
+					<input type="password" class="form-control" placeholder="密码" id="regist_password1" />
+					<input type="password" class="form-control" placeholder="确认密码" id="regist_password2" />
+					<input type="text" class="form-control" placeholder="手机号" id="regist_phone" />
+					<input type="text" class="form-control" placeholder="验证码" id="regist_vcode" />
+					<!--<button id="getVCode" type="button" class="btn btn-success" >获取验证码</button>-->
+					<input id="getVCode" type="button" class="btn btn-success" value="点击发送验证码" onclick="sendCode(this)" />
+
+				</div>
+				<input type="button" value="注册" class="btn btn-success" id="regist_btn" />
+			</div>
+		</div>
+
+	</body>
+
+
+</html>
